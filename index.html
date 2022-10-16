@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kochi Tech</title>
+  </head>
+  <body class="main">
+    <nav
+      class="navbar sticky-top navbar-expand-md navbar-dark py-2"
+      style="
+        height: 90px;
+        background-color: #1f1f1f;
+        border-bottom: 2px solid #8f8f8f;
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="img-fluid pe-3 pb-1"
+            src="./images/logo.svg"
+            alt="logo"
+          />Kochi Tech</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2" onclick="activeChange(event)">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="#ourService">Our Services</a>
+            </li>
+            <li>
+              <a href="#whoWeAre">Who We Are</a>
+            </li>
+          </ul>
+          <a class="menu-button px-4 mb-1" href="#contact">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid"
+      style="padding-left: 0px; padding-right: 0px; background-color: #f6f8fa"
+    >
+      <div style="height: 900px; background-image: url('/images/hero_img.svg')">
+        <div>
+          <p class="first-txt text-start">
+            Ready to innovate <br />
+            and develop ideas?
+          </p>
+          <div class="hero-btn">
+            <button
+              type="button"
+              class="btn img-btn btn-block"
+              style="padding: 24px 29px 24px 33px; margin-right: 24px"
+            >
+              Get in touch
+            </button>
+            <button
+              type="button"
+              class="hero-margin btn img-btn-right btn-block"
+              style="padding: 24px 35px 24px 33px"
+            >
+              Our service
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row gx-5 gy-3 mt-2"
+        style="margin-right: 0px; padding-right: 0px; background-color: #f6f8fa"
+      >
+        <div class="col-md-4 col-sm-12" style="padding-right: 0px">
+          <div class="deep-analysis">
+            <span class="media-left pe-2">
+              <img src="./images/tic.png" alt="tic" /> </span
+            >Deep Analysis
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12" style="padding-right: 0px">
+          <div class="deep-analysis">
+            <span class="media-left pe-2">
+              <img src="./images/tic.png" alt="tic" /> </span
+            >Business Needs
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12" style="padding-right: 0px">
+          <div class="deep-analysis">
+            <span class="media-left pe-2">
+              <img src="./images/tic.png" alt="tic" /> </span
+            >Financial Freedom
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="text-center"
+              style="padding-top: 152px; padding-right: 0px; max-width: 560px"
+            >
+              <h1 class="whatWeDo">What We Do</h1>
+              <p class="we-perform">
+                We perform deep analysis for every project, studying the
+                business of our clients and offering most effective solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="padding-top: 50px">
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 text-center"
+              style="padding-right: 62px; max-width: 650px"
+            >
+              <img
+                class="img-fluid"
+                src="./images/Mountains.svg"
+                alt="mountain"
+              />
+              <p class="strategic">Strategic Consulting</p>
+              <p class="we-perform">
+                Our team has walked in your shoes, and understands the unique
+                demands placed on the entrepreneur. We provide actionable
+                guidance to cure pain points and seize opportunities to fuel
+                growth, boost revenue, and maximize enterprise value.
+              </p>
+            </div>
+            <div
+              class="col-md-6 text-center"
+              style="padding-left: 62px; max-width: 650px"
+            >
+              <img class="img-fluid" src="./images/Coins.svg" alt="mountain" />
+              <p class="strategic">Financial Advisory</p>
+              <p class="we-perform">
+                We use a holistic approach to find the best partners,
+                understanding a business is more than it’s financials; we look
+                for value in all aspects of the business and brand, and use
+                creative strategies to best communicate this value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        style="
+          height: 700px;
+          background: url('/images/bg.svg');
+          margin-top: 200px;
+        "
+        class="d-flex justify-content-center"
+      >
+        <div class="align-self-center text-center" style="max-width: 750px">
+          <p class="disco">
+            Discover a Proven Plan To Build a Better Business and a Better Life
+          </p>
+        </div>
+      </section>
+      <section style="margin-top: 200px" class="d-flex justify-content-center" id="ourApproach">
+        <div class="row" style="margin-right: 0px; padding-right: 0px">
+          <div
+            class="col-md-6 approach align-self-center"
+            style="max-width: 820px"
+          >
+            <h1 class="our-Approach">Our Approach</h1>
+            <p class="our-Approach-pera pt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting
+            </p>
+          </div>
+          <div class="col-md-6 text-center" style="padding-right: 0px">
+            <img class="img-fluid" src="./images/hand.svg" alt="hand" />
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 250px" class="">
+        <div class="text-center">
+          <h1 class="whatWeDo">How We Do It</h1>
+        </div>
+        <div class="container-fluid" style="padding-top: 110px">
+          <div
+            class="row launch justify-content-center gx-5"
+            style="margin-right: 0px"
+          >
+            <div class="col-md-3 text-center" style="max-width: 400px">
+              <img class="img-fluid" src="./images/Rocket.svg" alt="mountain" />
+              <p class="strategic pt-4">Launch Stage</p>
+              <p class="we-perform pt-2">
+                Our business model allows us to engage early with emerging young
+                brands, offering guidance during a critical times as they enter
+                the market and are faced with challenges.
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <img
+                class="img-fluid"
+                src="./images/ChartLineUp.svg"
+                alt="mountain"
+              />
+              <p class="strategic pt-4">Growth Stage</p>
+              <p class="we-perform pt-2">
+                Growth is essential for success, and we help our clients create
+                and keep up with demand, guiding them through operations, sales
+                and marketing, financing, supply chain and distribution, and
+                people management.
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <img
+                class="img-fluid"
+                src="./images/CurrencyCircleDollar.svg"
+                alt="mountain"
+              />
+              <p class="strategic pt-4">Financing Advising</p>
+              <p class="we-perform pt-2">
+                We help our clients create strategic business plans and
+                financial models to determine their financial needs,
+                classification of investors and banking partners, investment
+                structure, and secure these partnerships.
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <img class="img-fluid" src="./images/doc.svg" alt="mountain" />
+              <p class="strategic pt-4">Exit and Succession</p>
+              <p class="we-perform pt-2">
+                We are honored to assist leaders at this important time in their
+                life. We work to create and perform the optimal plan for
+                succession; from valuation to outreach to negotiating to secure
+                the best deal, with the best partner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="
+          margin-top: 200px;
+          background-image: url('/images/ride.svg');
+          height: 799px;
+        "
+        class="d-flex justify-content-center"
+        id="whoWeAre"
+      >
+        <div class="align-self-center text-center" style="max-width: 650px">
+          <h1 class="our-team">Our Team</h1>
+          <p class="our-team-pera mt-4">
+            Our engineers and advisors are deep industry and process experts who
+            have over 18 years of experience working in the US, Canada and
+            Europe.
+          </p>
+        </div>
+      </section>
+      <section
+        style="margin-top: 2px; background-color: #225350; height: 269px"
+        class="d-flex justify-content-center"
+      >
+        <div class="align-self-center text-center" style="max-width: 650px">
+          <p class="tech-text">
+            Kochi Tech is Becoming a Hub for those Who Think Outside of the Box
+          </p>
+        </div>
+      </section>
+      <section style="margin-top: 250px" class="d-flex justify-content-center">
+        <div class="row" style="margin-right: 0px; padding-right: 0px">
+          <div
+            class="col-md-6 approach align-self-center"
+            style="max-width: 820px"
+          >
+            <h1 class="our-Approach">Working at Kochi Tech</h1>
+            <p class="our-Approach-pera pt-3">
+              At Kochi Tech, we work together to build a diverse culture where
+              each individual is given an opportunity to grow personally and
+              professionally, and collaborate to create a better future and
+              learn new skills. <br />
+              <br />
+              <n />It does not matter where you join us and in what role - we
+              are here to support you to do your best work, and help you get
+              where you want to go.
+            </p>
+          </div>
+          <div class="col-md-6 text-center" style="padding-right: 0px">
+            <img class="img-fluid pt-4" src="./images/leader.svg" alt="hand" />
+          </div>
+        </div>
+      </section>
+      <section
+        style="margin-top: 250px; background-image: url('/images/wall.svg')"
+        class="our-service-height"
+        id="ourService"
+      >
+        <div style="padding-top: 120px" class="text-center">
+          <div>
+            <h1 class="our-Approach">Our Services</h1>
+            <p class="our-Approach-pera pt-3">
+              It is a long established fact that a reader will be <br />
+              distracted by the readable content of a page
+            </p>
+          </div>
+        </div>
+        <div
+          class="row our-service-padding"
+          style="padding-top: 70px; margin-right: 0px; padding-bottom: 150px"
+        >
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/PaintBrush.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Design Thinking</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/AppWindow.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Business Process Automation</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img class="img-fluid pt-4" src="/images/Cube.svg" alt="brush" />
+            <p class="our-service-text py-4">Product management</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img class="img-fluid pt-4" src="/images/Robot.svg" alt="brush" />
+            <p class="our-service-text py-4">Artificial Intelligence</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img class="img-fluid pt-4" src="/images/Cloud.svg" alt="brush" />
+            <p class="our-service-text py-4">Cloud Solutions</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/HardDrives.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Data transformation</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/BoundingBox.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Software Development</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/TreeStructure.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">DevOps</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/ClockAfternoon.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Real-Time Analytics</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img class="img-fluid pt-4" src="/images/Stack.svg" alt="brush" />
+            <p class="our-service-text py-4">Distributed Data Architecture</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/MagicWand.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Quality Engineering & Assurance</p>
+          </div>
+          <div class="col-md-4 our-service text-center box">
+            <img
+              class="img-fluid pt-4"
+              src="/images/GlobeHemisphereEast.svg"
+              alt="brush"
+            />
+            <p class="our-service-text py-4">Digital marketing</p>
+          </div>
+        </div>
+      </section>
+      <section
+        style="background-color: #225350"
+        class="d-flex justify-content-center"
+      >
+        <div
+          class="row"
+          style="
+            margin-right: 0px;
+            padding-right: 0px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+          "
+        >
+          <div
+            class="col-md-6 approach align-self-center"
+            style="max-width: 820px"
+          >
+            <h1 class="map">Trusted by Companies Globally</h1>
+            <p class="map-text pt-3">
+              Fortune 500, Startups and mid size companies
+            </p>
+          </div>
+          <div class="col-md-6 text-center" style="padding-right: 0px">
+            <img class="img-fluid" src="./images/map.svg" alt="hand" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row justify-content-center" style="margin-right: 0px">
+            <div
+              class="text-center"
+              style="padding-top: 152px; padding-right: 0px; max-width: 560px"
+            >
+              <h1 class="whatWeDo">Client Testimony</h1>
+              <p class="we-perform">
+                People <span><img src="/images/love.svg" alt="love" /></span> us
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center client-border">
+          <div class="col-md-6 text-center">
+            <div class="client client-left">
+              <img class="img-fluid" src="./images/comma.svg" alt="mountain" />
+              <p class="client-text" style="padding-top: 64px">
+                Extremely professional, quick response times when needed, very
+                pleased with their entire team and expert service!
+              </p>
+              <div class="row" style="padding-top: 26.5px">
+                <div class="col">
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img class="img-fluid" src="/images/star.svg" alt="star" />
+                </div>
+              </div>
+              <h5 class="client-name" style="padding-top: 35.75px">
+                Nazir Khan
+              </h5>
+              <p
+                class="client-designation"
+                style="padding-top: 8px; padding-bottom: 57px"
+              >
+                President
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="client client-right">
+              <img class="img-fluid" src="./images/comma.svg" alt="mountain" />
+              <p class="client-text" style="padding-top: 64px">
+                Kochi Tech helped transform ideas into product and develop
+                prototype and MVP for us. Their professionalism & knowledge are
+                unmatched.
+              </p>
+              <div class="row" style="padding-top: 26.5px">
+                <div class="col">
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    style="padding-right: 5px"
+                    class="img-fluid"
+                    src="/images/star.svg"
+                    alt="star"
+                  />
+                  <img class="img-fluid" src="/images/star.svg" alt="star" />
+                </div>
+              </div>
+              <h5 class="client-name" style="padding-top: 35.75px">
+                George Windsor
+              </h5>
+              <p
+                class="client-designation"
+                style="padding-top: 8px; padding-bottom: 57px"
+              >
+                Founder & CEO
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 150px; background-color: #1f1f1f" id="contact">
+        <div class="row" style="margin-right: 0px; padding-right: 0px; padding-top: 150px; padding-bottom: 150px;">
+          <div class="col-md-6 contact-padding align-self-center">
+            <img src="/images/handcontact.svg" alt="hand" />
+            <h1 class="contact">Contact Us</h1>
+            <p class="contact-pera pt-3">
+              Thank you for reaching out. We’ll make sure that <br />
+              our team receives your message!
+            </p>
+          </div>
+          <div class="col-md-6 contact-form-padding">
+            <form class="form">
+              <div class="m-4">
+                <input
+                style="border-radius: 12px; padding: 21px 0px 21px 24px; background-color: rgba(255, 255, 255, .1); border: 0px;"
+                  type="text"
+                  class="form-control mb-4"
+                  id="inputName"
+                  placeholder="Your name"
+                />
+                <input
+                style="border-radius: 12px; padding: 21px 0px 21px 24px; background-color: rgba(255, 255, 255, .1); border: 0px;"
+                  type="email"
+                  class="form-control mb-4"
+                  id="inputEmail"
+                  placeholder="Your email"
+                />
+                  <select class="form-select mb-4" style="border-radius: 12px; padding: 21px 0px 21px 24px; background-color: rgba(255, 255, 255, .1); border: 0px;">
+                    <option value="1">General inquiries</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                <textarea class="form-control mb-4" style="border-radius: 12px; height: 160px;  padding: 21px 0px 21px 24px; background-color: rgba(255, 255, 255, .1); border: 0px;" placeholder="Message"></textarea>
+                <button type="button" class="btn submit-btn mb-2" style="padding: 18px 33px 18px 33px;">Submit</button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section
+        style="background-image: url(/images/handshaking.svg); height: 396px;"
+        class="d-flex justify-content-center"
+      >
+        <div class="align-self-center text-center">
+          <p class="tech-text">
+            It’s Time to Get More of What You Want From Your Business
+          </p>
+        </div>
+      </section>
+      <section style="border-bottom: 2px solid #ececec;">
+        <div class="row logo-padding" style="margin-right: 0px; padding-top: 40px">
+          <div class="col-md-6 logo-text pt-2">
+            <span><img src="/images/logo.svg" class="me-3" alt="logo"></span>Kochi Tech
+          </div>
+          <div class="col-md-6">
+            <div class="row float-end">
+              <a class="col-md-6 logo-section-text" href="#whoWeAre">Our team</a>
+              <a class="col-md-6 logo-section-text" href="#contact">Contact us</a>
+              <a class="col-md-6 logo-section-text" href="#ourApproach">Our approach</a>
+              <a class="col-md-6 logo-section-text" href="#whoWeAre">Who we are</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex justify-content-center">
+        <div class="align-self-center text-center">
+          <p class="resurved-text">
+            2022 © Kochi Tech - All rights reserved.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="./js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
